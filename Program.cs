@@ -65,14 +65,14 @@ namespace DamnJAM
         static void Main()
         {
 
-            Console.WriteLine("Enter the duration in minutes :");
+            Console.Write("Enter the duration in minutes :");
             if (!int.TryParse(Console.ReadLine(), out int minutes) || minutes <= 0)
             {
                 Console.WriteLine("Invalid input. Please enter a positive integer.");
                 return;
             }
-
-            Console.WriteLine("Enter the delay duration in seconds :");
+              
+            Console.Write("Enter the delay duration in seconds :");
             if (!int.TryParse(Console.ReadLine(), out int sleepDuration) || sleepDuration <= 0)
             {
                 Console.WriteLine("Invalid input. Please enter a positive integer.");
